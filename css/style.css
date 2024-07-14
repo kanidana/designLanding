@@ -1,0 +1,703 @@
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    width: 100%;
+}
+
+
+
+/*-----------------------------header */
+header{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #E4E2DD;
+    position: sticky;
+    top: -3px;
+    z-index: 1;
+    margin-top: -10px;
+}
+
+.nav{
+    margin-top: 30px;
+}
+
+
+.nav a{
+    text-decoration: none;
+    color: #63532d;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+
+/*-------------------accueil-------------------------*/
+
+#accueil{
+    background-image: url(/images/accueil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1024px;
+    position: relative;
+}
+
+.text{
+    background-color: rgba(0, 0, 0, 0.441);
+    width: 800px;
+    height: 1024px;
+    position: absolute;
+    margin-left: -15px;
+}
+
+.cover{
+    /* background-color: yellow; */
+    margin-top: 200px;
+    margin-left: 100px;
+}
+
+#accueil p{
+   color: white;
+   font-size:95px;
+   font-weight: bold;
+   /* background-color: red; */
+   width: 500px;
+   margin-left: 39px;
+}
+
+#accueil a{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    /* background-color: blue; */
+    margin-left: 100px;
+    text-decoration: none;
+    padding: 8px;
+}
+
+#accueil a:hover{
+    background-color: #E4E2DD ;
+    border-radius: 4px;
+    font-size: 30px;
+    transition: 0.5s;
+    color: black;
+}
+
+/* section produits */
+.produit p{
+   width: 280px;
+}
+
+.produit{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-wrap: wrap;
+    background-color: #E4E2DD;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.design1 h1, .design2 h1, .design3 h1{
+    font-size: 80px;
+    /* background-color: red; */
+    color: #7a6532;
+}
+
+.design1{
+    margin-right: 85px;
+    margin-bottom: 150px;
+}
+
+.design2{
+    margin-bottom: 240px;
+    margin-left: 20px;
+}
+
+.design3{
+    margin-bottom:250px;
+    margin-right: 45px;
+}
+
+.model{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    /* background-color: red; */
+    padding-bottom: 60px;
+}
+
+.model img:hover{
+    width: 350px;
+    transition-duration: 0.5s;
+}
+
+.model img{
+    width: 300px;
+    margin-right: 15px;
+}
+
+.model a{
+    margin-bottom: 30px;
+}
+
+
+.btn_achat{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    background-color: #887445;
+    border-radius: 5px;
+    margin-left: 70px;
+    font-size:10px;
+    width: 125px;
+}
+
+.btn_achat:hover{
+    font-size: 15px;
+    width: 185px;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.846);
+}
+
+.plus{
+    text-decoration: none;
+}
+/* contact */
+
+#contact{
+    margin-top: -25px;
+    background-image: url(/images/accueil1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+    position: relative;
+}
+
+.form p{
+    text-align: center;
+    font-size: 25px;
+}
+
+.form{
+    position: absolute;
+    margin-top: 150px;
+    width: 1500px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 20px auto;
+    background-color: #e4e2dd82;
+    box-shadow: rgba(0, 0, 0, 0.511);
+    padding: 50px;
+}
+
+input{
+    background-color: rgba(255, 255, 255, 0.659);
+    border-radius: 2px;
+}
+
+.btns{
+    width: 100px;
+    margin: 10px auto;
+    padding-top: 2px;
+}
+
+label{
+    font-weight: bold;
+}
+
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.fonts{
+    width: 450px;
+    padding-left: 20px;
+    margin-bottom: 80px;
+}
+
+.fonts img{
+    width: 30px;
+    margin-right: 50px; 
+}
+
+/*----------------------------------------------- media queries ----------------------------------------*/
+
+
+ /* Extra small devices */
+ @media (max-width: 576px) 
+ { 
+    header .nav{
+        display: none;
+    }
+/* ---------------------------------accueil-------------------------- */
+    #accueil{
+        height: 670px;
+        width: 550px;
+    }
+
+    .text{
+        width: 285px;
+        height: 670px;
+    }
+
+    #accueil p{
+
+       font-size:45px;
+       width: 220px;
+       margin-left: -50px;
+    }
+
+    #accueil a{
+        font-size: 10px;
+        color: rgb(246, 239, 162);
+        margin-left: -35px;
+    }
+
+    #accueil a:hover{
+        border-radius: 4px;
+        font-size: 12px;
+    }
+
+    /* ------------------------------------- */
+
+    .design1 h1{
+        font-size: 40px;
+        margin-left: 80px;
+        margin-top: 30px;
+    }
+
+    .design2 h1, .design3 h1{
+        display: none;
+    }
+    .model{
+        margin-top: -40px;
+        margin-left: 10px;
+        /* background-color: red; */
+    }
+    #rang{
+        margin-left: 74px;
+    }
+
+    /* ------------------------------------------------ */
+    #contact{
+        height: 700px;
+        width: 500x;
+    }
+
+    .form p{
+        text-align: center;
+        font-size: 20px;
+        margin-left: 70px;
+        margin-bottom: 20px;
+        /* background-color: red; */
+        width: 400px;
+    }
+    
+    .form{
+        position: absolute;
+        /* background-color: red; */
+        margin-top: 80px;
+        width: 480px;
+    }
+    
+    form{
+        display: flex;
+        width: 300px;
+        /* margin: 20px auto; */
+        background-color: #e4e2dd82;
+        box-shadow: rgba(0, 0, 0, 0.511);
+        margin-left: 135px;
+        padding: 20px;
+    }
+
+    .fonts{
+        padding-left: 40px;
+        /* background-color: red; */
+        width: 480px;
+    }
+
+ } 
+ /* Small devices (landscape phones, 576px and up)  */
+	@media (min-width: 576px) and (max-width: 768px) 
+    { 
+        header .nav{
+            display: none;
+        }
+
+        #accueil{
+            width: 749px;
+            height: 670px;
+            background-position: center;
+        }
+    
+        .text{
+            height: 670px;
+            width: 380px;
+        }
+    
+        #accueil p{
+           font-size:60px;
+           width: 290px;
+           margin-left: -35px;
+           margin-top: -50px;
+           /* background-color: red; */
+        }
+    
+        #accueil a{
+            font-size: 15px;
+            color: rgb(246, 239, 162);
+            margin-left: -10px;
+            margin-top: 40px;
+        }
+    
+        #accueil a:hover{
+            border-radius: 4px;
+            font-size: 12px;
+        }
+    
+        /* ------------------------------------- */
+    
+        .design1 h1{
+            font-size: 40px;
+            margin-left: 80px;
+            margin-top: 30px;
+        }
+    
+        .design2 h1, .design3 h1{
+            display: none;
+        }
+        .model{
+            margin-top: -40px;
+            margin-left: 10px;
+            /* background-color: red; */
+        }
+        /* ---------------------------------------------------------------------- */
+        #contact{
+            height: 700px;
+            width: 500x;
+        }
+    
+        .form p{
+            font-size: 20px;
+            margin: 20px auto;
+            margin-bottom: 20px;
+            width: 500px;
+        }
+        
+        .form{
+            margin-top: 80px;
+            width: 749px;
+        }
+        
+        form{
+            display: flex;
+            width: 400px;
+            margin: 20px auto;
+            padding: 18px;
+        }
+
+        .btns{
+            margin-left: 130px;
+        }
+       
+        .fonts{
+            padding-left: 40px;
+            /* background-color: red; */
+            width: 480px;
+        }
+        
+    } 
+ /* Medium devices (tablets, 768px and up)  */
+	@media (min-width: 768px) and (max-width: 992px)  
+    {
+        header .navbar{
+            display: none;
+        }
+
+        #accueil{
+            width: 970px;
+            height: 670px;
+        }
+    
+        .text{
+            height: 670px;
+            width: 500px;
+        }
+    
+        #accueil p{
+           font-size:70px;
+           width: 390px;
+           /* background-color: red; */
+           margin-left: -18px;
+           margin-top: -90px;
+        }
+    
+        #accueil a{
+            font-size: 15px;
+            color: rgb(246, 239, 162);
+            margin-left: 40px;
+            margin-top: 40px;
+        }
+    
+        #accueil a:hover{
+            border-radius: 4px;
+            font-size: 12px;
+        }
+    
+        /* ------------------------------------- */
+    
+        .design1 h1{
+            font-size: 99px;
+            margin-left: 80px;
+            margin-top: 30px;
+        }
+    
+        .model{
+            margin-top: -40px;
+            margin-left: 10px;
+            
+        }
+    
+        /* ---------------------------------------------------------------------- */
+        #contact{
+            height: 700px;
+            width: 500x;
+        }
+    
+        .form p{
+            font-size: 20px;
+            margin: 20px auto;
+            margin-bottom: 20px;
+            width: 500px;
+        }
+        
+        .form{
+            margin-top: 80px;
+            width: 974px;
+        }
+        
+        form{
+            display: flex;
+            width: 400px;
+            margin: 20px auto;
+            padding: 18px;
+        }
+
+        .btns{
+            margin-left: 130px;
+        }
+       
+        .fonts{
+            padding-left: 40px;
+            width: 480px;
+        }
+    } 
+ /* Large devices (desktops, 992px and up)  */
+	@media (min-width: 992px) and (max-width: 1200px)  
+    {
+        header .navbar{
+            display: none;
+        }
+
+        #accueil{
+            width: 1500px;
+            height: 780px;
+        }
+    
+        .text{
+            height: 780px;
+            width: 550px;
+        }
+    
+        #accueil p{
+           font-size:75px;
+           width: 400px;
+           /* background-color: red; */
+           margin-left: -1px;
+           margin-top: -50px;
+        }
+    
+        #accueil a{
+            font-size: 15px;
+            color: rgb(246, 239, 162);
+            margin-left: 60px;
+            margin-top: 40px;
+        }
+    
+        #accueil a:hover{
+            border-radius: 4px;
+            font-size: 12px;
+        }
+    
+        /* ------------------------------------- */
+      
+        .design1 h1{
+            font-size: 110px;
+            /* background-color: red; */
+            margin-top: 30px;
+            margin-left: 55px;
+        }
+
+        .design2 h1, .design3 h1{
+           display: none;
+        }
+    
+        .model{
+            margin-top: -40px;
+            margin-left: 10px;
+            /* background-color: red; */
+        }
+    
+        /* ---------------------------------------------------------------------- */
+        #contact{
+            height: 700px;
+            width: 500x;
+        }
+    
+        .form p{
+            font-size: 20px;
+            margin: 20px auto;
+            margin-bottom: 20px;
+            width: 500px;
+        }
+        
+        .form{
+            margin-top: 80px;
+            width: 1094px;
+            /* background-color: green; */
+        }
+        
+        form{
+            display: flex;
+            width: 400px;
+            margin: 20px auto;
+            padding: 18px;
+        }
+
+        .btns{
+            margin-left: 130px;
+        }
+       
+        .fonts{
+            padding-left: 40px;
+            width: 480px;
+        }
+    } 
+ /* Extra large devices (large desktops, 1200px and up)  */
+	@media (min-width: 1200px) 
+    { 
+        header .navbar{
+            display: none;
+        }
+
+        #accueil{
+            width: 1519px;
+            height: 1024px;
+        }
+    
+        .text{
+            height: 1024px;
+            width: 700px;
+        }
+    
+        #accueil p{
+           font-size:85px;
+           width: 500px;
+           /* background-color: green; */
+           margin-left: 40px;
+        }
+    
+        #accueil a{
+            font-size: 20px;
+            color: rgb(246, 239, 162);
+            margin-left: 100px;
+            margin-top: 90px;
+        }
+    
+        #accueil a:hover{
+            border-radius: 9px;
+            font-size: 21px;
+            background-color: #e88989 
+        }
+    
+        /* ------------------------------------- */
+        
+        .produit{
+            background-color: #E4E2DD;
+            padding-top: 150px;
+            padding-bottom: 50px;
+        }
+        
+        .design1 h1{
+            font-size: 80px;
+            /* background-color: green;  */
+            margin-top: -80px;
+            margin-left: 10px;
+        }
+
+        .design2 h1, .design3 h1{
+            font-size: 100px;
+            /* background-color: red; */
+            margin-top: 30px;
+          
+        }
+    
+        .model{
+            margin-top: -40px;
+            margin-left: 10px;
+            /* background-color: red; */
+        }
+    
+        /* ---------------------------------------------------------------------- */
+        #contact{
+            height: 700px;
+            width: 500x;
+        }
+    
+        .form p{
+            font-size: 20px;
+            margin: 20px auto;
+            margin-bottom: 20px;
+            width: 500px;
+        }
+        
+        .form{
+            margin-top: 80px;
+            width: 1510px;
+            /* background-color: green; */
+        }
+        
+        form{
+            display: flex;
+            width: 400px;
+            margin: 20px auto;
+            padding: 18px;
+        }
+
+        .btns{
+            margin-left: 130px;
+        }
+       
+        .fonts{
+            padding-left: 40px;
+            width: 480px;
+        }
+    } 
