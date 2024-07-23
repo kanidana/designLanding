@@ -602,3 +602,29 @@ footer{
             margin-left: 130px;
         }
     } 
+
+
+
+
+    /* description des choix de conception faits au cours du processus d’élaboration. */
+
+    /* 
+    
+    1) utilisation du framework boostrap m'a permis de rendre ma page plus reactive 
+     et j'ai pu egalelement utiliser la class container fluid pour faciliter la conception de la navbar
+
+
+    2) l'utilisation des medias queries m'ont permis de mieux ciblier les elements que
+     je devais toucher pour chaque taille d'ecran. j'ai trouver ca plus facile a faire 
+
+    
+    3) l'utilisation de la icone de la bibliotheque font awesome, un vrai soulagement.
+     les icones sont parfaites et on peut les inserer comme on veut et c'est facile de les styliser,
+      comparer au image png qu'on telecharge sur google 
+      
+
+    4) j'ai opter pour les images sur pixabay parce que les images sont de bonnes qualites,
+     une parfaite resolution et assez d'images aussi qui permet vraiment d'avoir a peu pret tout ce qu'on recherche
+
+    
+    */
