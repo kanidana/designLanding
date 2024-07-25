@@ -5,12 +5,7 @@
     padding: 0;
 
 }
-
-body{
-    width: 100%;
-}
-
-header, .design, .produit, .model, footer, form{
+.design, .produit, .model, footer, form{
     display: flex;
 }
 
@@ -36,36 +31,36 @@ footer, .model, form{
 
 /*--------------------------------------HEADER------------------------------------------------------ */
 header{
-    justify-content: space-evenly;
     background-color: #E4E2DD;
     position: sticky;
-    top: -3px;
+    top: 0px;
     z-index: 1;
-    margin-top: -10px;
-}
-
-.nav{
-    margin-top: 30px;
 }
 
 .nav a{
     text-decoration: none;
-    color: #63532d;
+    color: #5b481d;
     font-size: 20px;
-    margin-right: 20px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.nav a:hover{
+    color:#e88989
 }
 
 /*---------------------------------------------ACCUEIL-------------------------------------------------*/
 
 #accueil{
     background-image: url(/images/accueil.jpg);
-    height: 1024px;
+    height: 800px;
+    position: relative;
 }
 
 .text{
     background-color: rgba(0, 0, 0, 0.441);
-    width: 800px;
-    height: 1024px;
+    width: 700px;
+    height: 800px;
     position: absolute;
     margin-left: -15px;
 }
@@ -77,25 +72,24 @@ header{
 
 #accueil p{
    color: white;
-   font-size:95px;
-   width: 500px;
-   margin-left: 39px;
+   font-size: 85px;
+   width: 400px;
+   margin-top: -150px;
 }
 
 #accueil a{
-    font-size: 25px;
+    font-size: 20px;
     color: white;
-    margin-left: 100px;
+    background-color: black;
+    border-radius: 8px;
+    margin-left: 40px;
+    margin-top: 30px;
     text-decoration: none;
     padding: 8px;
 }
 
 #accueil a:hover{
     background-color: #E4E2DD ;
-    border-radius: 4px;
-    font-size: 30px;
-    transition: 0.5s;
-    color: black;
 }
 
 /*----------------------------------------------------------------NOS MODELS--------------------------------------------------------- */
@@ -112,8 +106,8 @@ header{
 
 .design1 h1{
     font-size: 90px;
+    margin-bottom: 50px;
     color: #7a6532;
-    margin-left: -50px;
 }
 
 .design{
@@ -131,7 +125,6 @@ header{
 
 .model img{
     width: 300px;
-    margin-right: 30px;
 }
 
 .model a{
@@ -176,8 +169,8 @@ header{
 
 .form{
     position: absolute;
-    margin-top: 150px;
-    width: 1500px;
+    margin-top: 80px;
+    width: 100%;
 }
 
 form{
@@ -197,6 +190,7 @@ input{
     width: 100px;
     margin: 10px auto;
     padding-top: 2px;
+    margin-left: 170px;
 }
 
 /*-------------------------------------------------------MON FOOTER----------------------------------------------------------------- */
@@ -224,51 +218,57 @@ footer{
  
  @media (max-width: 576px) 
  { 
-    header .nav{
+
+    .logo{
         display: none;
     }
-/* -------------------------------accueil------------------------------ */
-    #accueil{
-        height: 670px;
-        width: 550px;
+
+    .nav a{
+        font-size: 13px;
     }
 
+    .nav{
+        width: 460px;
+    }
+
+/* -------------------------------accueil------------------------------ */
     .text{
         width: 285px;
-        height: 670px;
+    }
+
+    .cover{
+        margin-top: 300px;
     }
 
     #accueil p{
-
-       font-size:45px;
+       font-size: 45px;
        width: 220px;
        margin-left: -50px;
     }
 
     #accueil a{
-        font-size: 10px;
-        color: rgb(246, 239, 162);
+        font-size: 13px;
+        color: black;
         margin-left: -35px;
+        background-color: #e88989;
+
     }
 
     #accueil a:hover{
-        border-radius: 4px;
-        font-size: 12px;
+        background-color: white;
     }
 
    /* -------------------------------nos models------------------------------ */
 
     .design1 h1{
         font-size: 50px;
-        margin-left: -5px;
         margin-top: 10px;
         margin-bottom: 70px;
     }
-    .design{
-        margin-top:-10px ;
-    }
+
     .model{
-        margin-left: 10px;
+        justify-content: center;
+        align-items: center;
     }
 
    /* -------------------------------contact------------------------------ */
@@ -283,12 +283,6 @@ footer{
         width: 400px;
     }
     
-    .form{
-        position: absolute;
-        margin-top: 80px;
-        width: 480px;
-    }
-    
     form{
         width: 300px;
         padding: 20px;
@@ -298,28 +292,32 @@ footer{
         padding-left: 40px;
         width: 480px;
     }
+
+    .btns{
+        margin-left: 80px;
+    }
  } 
                                             /***********************SMALL DEVICES (landscape phones, 576px and up)**************************/
 
 
 	@media (min-width: 576px) and (max-width: 768px) 
     { 
-        header .nav{
-            display: none;
-        }
-   /* -------------------------------accueil------------------------------ */
-        #accueil{
-            width: 749px;
-            height: 670px;
+
+        .nav a{
+            font-size: 18px;
         }
     
+        .nav{
+            width: 570px;
+        }
+   /* -------------------------------accueil------------------------------ */
+    
         .text{
-            height: 670px;
-            width: 380px;
+            width: 400px;
         }
     
         #accueil p{
-           font-size:60px;
+           font-size: 55px;
            width: 290px;
            margin-left: -35px;
            margin-top: -50px;
@@ -339,12 +337,13 @@ footer{
      /* -------------------------------nos models------------------------------ */
     
         .design1 h1{
-            font-size: 70px;
-            margin-left: -5px;
-            margin-top: 50px;
+            font-size: 60px;
+            margin-bottom: 50px;
         }
+
         .model{
-            margin-left: 10px;
+            justify-content: center;
+            align-items: center;
         }
      /* -------------------------------contact-------------------------------- */
         #contact{
@@ -357,23 +356,18 @@ footer{
             width: 500px;
         }
         
-        .form{
-            margin-top: 80px;
-            width: 749px;
-        }
-        
         form{
             width: 400px;
             padding: 18px;
-        }
-
-        .btns{
-            margin-left: 130px;
         }
        
         .fonts{
             padding-left: 40px;
             width: 480px;
+        }
+
+        .btns{
+            margin-left: 130px;
         }
         
     } 
@@ -383,20 +377,9 @@ footer{
 	@media (min-width: 768px) and (max-width: 992px)  
     {
         /* -------------------------------accueil------------------------------ */
-        header .navbar{
-            display: none;
-        }
-
-        #accueil{
-            width: 970px;
-            height: 670px;
-        }
-    
         .text{
-            height: 670px;
             width: 500px;
         }
-    
         #accueil p{
            font-size:70px;
            width: 390px;
@@ -418,23 +401,15 @@ footer{
     
 
         .design1 h1{
-            font-size: 90px;
+            font-size: 70px;
             padding-bottom: 40px;
-            margin-left: -50px;
         }
 
-        .design{
-            margin-top: -1px;
-        }
-        .model{
-            margin-left: 10px;
-            
-        }
     
      /* -------------------------------contact------------------------------ */
         #contact{
             height: 700px;
-            width: 500x;
+            width: 100x;
         }
     
         .form p{
@@ -442,10 +417,6 @@ footer{
             width: 500px;
         }
         
-        .form{
-            margin-top: 80px;
-            width: 974px;
-        }
         
         form{
             width: 400px;
@@ -460,33 +431,21 @@ footer{
             padding-left: 40px;
             width: 480px;
         }
+
     } 
                                                     /****************************LARGE DEVICES  (desktops, 992px and up) **********************************/
-
-
 
 	@media (min-width: 992px) and (max-width: 1200px)  
     {
         /* -------------------------------accueil------------------------------ */
-        header .navbar{
-            display: none;
-        }
-
-        #accueil{
-            width: 1500px;
-            height: 780px;
-        }
-    
         .text{
-            height: 780px;
-            width: 550px;
+            width: 500px;
         }
-    
         #accueil p{
            font-size:75px;
            width: 400px;
            margin-left: -1px;
-           margin-top: -50px;
+           margin-top: -90px;
         }
     
         #accueil a{
@@ -509,7 +468,7 @@ footer{
         }
     
         .model{
-            margin-left: 10px;
+            margin-right: 50px;
         }
             
         /* -------------------------------contact------------------------------ */
@@ -523,23 +482,18 @@ footer{
             width: 500px;
         }
         
-        .form{
-            margin-top: 80px;
-            width: 1200px;
-        }
-        
         form{
             width: 400px;
             padding: 18px;
         }
 
-        .btns{
-            margin-left: 130px;
-        }
-       
         .fonts{
             padding-left: 40px;
             width: 480px;
+        }
+
+        .btns{
+            margin-left: 130px;
         }
     } 
                                                /**************************** EXTRA LARGE DEVICES  (large desktops, 1200px and up)  **********************************/
@@ -548,41 +502,13 @@ footer{
 	@media (min-width: 1200px) 
     { 
          /* -------------------------------accueil------------------------------ */
-        header .navbar{
-            display: none;
-        }
-
-        #accueil{
-            width: 1519px;
-            height: 1024px;
-        }
     
-        .text{
-            height: 1024px;
-            width: 700px;
-        }
     
-        #accueil p{
-           font-size:85px;
-           width: 500px;
-           margin-left: 40px;
+        /* -------------------------------nos models------------------------------ */
+        .model{
+            margin-right: 50px;
         }
-    
-        #accueil a{
-            font-size: 20px;
-            margin-left: 100px;
-            margin-top: 90px;
-        }
-    
-        #accueil a:hover{
-            border-radius: 9px;
-            font-size: 21px;
-            background-color: #e88989 
-        }
-    
-      /* -------------------------------nos models------------------------------ */
-        
-      /* -------------------------------contact------------------------------ */
+        /* -------------------------------contact------------------------------ */
         #contact{
             height: 700px;
             width: 700x;
@@ -592,39 +518,28 @@ footer{
             font-size: 25px;
             width: 600px;
         }
-        
-        .form{
-            margin-top: 80px;
-            width: 1390px;
-        }
-
-        .btns{
-            margin-left: 130px;
-        }
     } 
 
 
 
 
-    /* description des choix de conception faits au cours du processus d’élaboration. */
+    /* description des choix de conception faits au cours du processus d’élaboration. 
 
-    /* 
+  
     
     1) utilisation du framework boostrap m'a permis de rendre ma page plus reactive 
-     et j'ai pu egalelement utiliser la class container fluid pour faciliter la conception de la navbar
+       et j'ai pu egalelement utiliser la class container fluid pour faciliter la conception de la navbar
 
 
     2) l'utilisation des medias queries m'ont permis de mieux ciblier les elements que
-     je devais toucher pour chaque taille d'ecran. j'ai trouver ca plus facile a faire 
+       je devais toucher pour chaque taille d'ecran. j'ai trouver ca plus facile a faire 
 
     
     3) l'utilisation de la icone de la bibliotheque font awesome, un vrai soulagement.
-     les icones sont parfaites et on peut les inserer comme on veut et c'est facile de les styliser,
+       les icones sont parfaites et on peut les inserer comme on veut et c'est facile de les styliser,
       comparer au image png qu'on telecharge sur google 
       
 
     4) j'ai opter pour les images sur pixabay parce que les images sont de bonnes qualites,
-     une parfaite resolution et assez d'images aussi qui permet vraiment d'avoir a peu pret tout ce qu'on recherche
-
-    
-    */
+       une parfaite resolution et assez d'images aussi qui permet vraiment d'avoir a peu pret tout ce qu'on recherche 
+ */
